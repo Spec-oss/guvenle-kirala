@@ -7,7 +7,7 @@ import background from "../assets/background.png";
 
 export default function MainFooter() {
   return (
-    <footer className="bg-neutral-900 text-center text-neutral-100 dark:bg-neutral-100 dark:text-neutral-100 lg:text-left">
+    <footer className="bg-neutral-900 text-center text-neutral-100 lg:text-left">
       <div className="mx-6 py-10 text-center md:text-left">
         <div className="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-5">
           <div className="">
@@ -116,11 +116,13 @@ export default function MainFooter() {
             </p>
           </div>
           <div className="">
+            <div className="flex justify-center md:justify-start">
             <img alt="logo" src={logo} className="w-48" />
-            <span className="mt-4 mb-4 flex font-semibold md:justify-start">
+            </div>
+            <span className="mt-4 mb-4 flex justify-center font-semibold md:justify-start">
               Kiramkolay Bilişim Teknolojileri A.Ş.
             </span>
-            <div className="flex mb-4">
+            <div className="flex justify-center md:justify-start mb-4">
               <a href="/#" className="mr-6 text-neutral-200 ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -162,10 +164,12 @@ export default function MainFooter() {
                 </svg>
               </a>
             </div>
-            <div className="grid-2 grid md:grid-cols-2 gap-2">
-              <img alt="huawei" src={huawei} className="w-28" />
-              <img alt="google" src={google} className="w-28" />
-              <img alt="ios" src={ios} className="w-28" />
+            <div className="flex justify-center md:justify-start">
+              <div className="grid md:grid-cols-2 gap-2">
+                <img alt="huawei" src={huawei} className="w-28" />
+                <img alt="google" src={google} className="w-28" />
+                <img alt="ios" src={ios} className="w-28" />
+              </div>
             </div>
           </div>
         </div>
@@ -176,10 +180,14 @@ export default function MainFooter() {
           <p>© 2023 Tüm Hakları Saklıdır.</p>
         </div>
         <div className="p-6 flex justify-center font-semibold md:justify-start">
-          <a href="/#" className="underline">Gizlilik Politikası</a>
+          <a href="/#" className="underline">
+            Gizlilik Politikası
+          </a>
         </div>
         <div className="p-6 flex justify-center font-semibold md:justify-start">
-          <a href="/#" className="underline" >Kullanım Şartları</a>
+          <a href="/#" className="underline">
+            Kullanım Şartları
+          </a>
         </div>
         <div className="p-6 flex justify-center font-semibold md:justify-start">
           <p>Versiyon: v1.0.0.0</p>
